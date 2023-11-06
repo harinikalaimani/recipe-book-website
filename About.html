@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>About</title>
+    <style>
+        .form{
+  width:340px;
+  height:440px;
+  background:rgba(192, 239, 121, 0.959);
+  border-radius:8px;
+  box-shadow:0 0 40px -10px #000;
+  margin-top:200px;
+  margin-left: 250px;
+  padding:20px 30px;
+  max-width:calc(100vw - 40px);
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif; 
+         
+          
+  }
+h2{
+  margin:10px 0;
+  padding-bottom:10px;
+  width:180px;
+  color:#000;
+  border-bottom:3px solid #78788c;
+  }
+input{
+      width:100%;
+      padding:10px;
+      box-sizing:border-box;
+      background:none;
+      outline:none;
+      resize:none;
+      border:0;
+      font-family:'Montserrat',sans-serif;
+      transition:all .3s;
+      border-bottom:2px solid #000;
+  }
+input:focus{
+      border-bottom:2px solid #000;
+  }
+p:before{
+      content:attr(type);
+      display:block;
+      margin:28px 0 0;
+      font-size:14px;
+      color:#000;
+  }
+button{
+      float:right;
+      padding:8px 12px;
+      margin:8px 0 0;
+      font-family:'Montserrat',sans-serif;
+      border:2px solid #000;
+      background:0;
+      color:#000;
+      cursor:pointer;transition:all .3s}
+button:hover{
+  background:#78788c;
+      color:#fff;
+}
+.cont{
+  content:'Hi';
+  position:absolute;
+  top: 620px;
+  margin-left: 10px;
+  background:#50505a;
+  color:#fff;width:320px;
+  padding:16px 4px 16px 0;
+  border-radius:6px;
+  font-size:13px;
+  box-shadow:10px 10px 40px -14px #000;
+  text-align: center;
+  
+}
+.bg-image{
+  background-image: url(images/bgimg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  
+
+}
+    </style>
+</head>
+<body>
+    <div class="bg-image">
+        <div>
+            <nav class="font">
+              <div>
+                <img src="./images/logo.png" alt="" />
+              </div>
+              <header>
+                <H1 style="color:#ff004f; font: size 28PX;;">COOKING CANVAS</H1>
+             </header>
+          <div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Recipes.html">RECIPES</a></li>
+                    <li><a href="About.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <form class="form">
+                <h2>CONTACT US</h2>
+                <p type="Name:"><input placeholder="Write your name here.."></input></p>
+                <p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>
+                <p type="Message:"><input placeholder="What would you like to tell us.."></input></p>
+                <button class="msg">Send Message</button>
+                <div class="cont">
+                  <span class="fao"></span>001 1023 567
+                  <span class="faeo"></span> contact@company.com
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+</html> 
